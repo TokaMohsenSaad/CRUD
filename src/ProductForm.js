@@ -52,63 +52,63 @@ const ProductForm = ({
 
   return (
     <form
-      onsubmit="{onSubmit}"
-      classname="w-75 mx-auto py-5 px-3 rounded-3 shadow-lg mt-5"
+      onSubmit={onSubmit}
+      className="w-75 mx-auto py-5 px-3 rounded-3 shadow-lg mt-5"
     >
       <h1>CRUD Project</h1>
-      <div classname="mb-3">
-        <label htmlfor="name" classname="form-label">
+      <div className="mb-3">
+        <label htmlFor="name" className="form-label">
           Product Name
         </label>
         <input
           type="text"
-          classname="form-control"
+          className="form-control"
           id="name"
-          defaultValue="{product.name}"
-          onchange="{onChange}"
+          defaultValue={product.name}
+          onChange={onChange}
         />
       </div>
-      <div classname="mb-3">
-        <label htmlfor="cat" classname="form-label">
+      <div className="mb-3">
+        <label htmlFor="cat" className="form-label">
           Product Category
         </label>
         <input
           type="text"
-          classname="form-control"
+          className="form-control"
           id="cat"
-          defaultValue="{product.cat}"
-          onchange="{onChange}"
+          defaultValue={product.cat}
+          onChange={onChange}
         />
       </div>
-      <div classname="mb-3">
-        <label htmlfor="price" classname="form-label">
+      <div className="mb-3">
+        <label htmlFor="price" className="form-label">
           Product Price
         </label>
         <input
           type="text"
-          classname="form-control"
+          className="form-control"
           id="price"
-          defaultValue="{product.price}"
-          onchange="{onChange}"
+          defaultValue={product.price}
+          onChange={onChange}
         />
       </div>
-      <div classname="mb-3">
-        <label htmlfor="desc" classname="form-label">
+      <div className="mb-3">
+        <label htmlFor="desc" className="form-label">
           Product Desc
         </label>
         <textarea
-          classname="form-control"
+          className="form-control"
           id="desc"
           rows={3}
-          value="{product.desc}"
-          onchange="{onChange}"
-          defaultValue={""}
+          value={product.desc}
+          onChange={onChange}
+          
         />
       </div>
-      <button type="submit" classname="btn btn-primary">
-        {"{"}currentProduct ? "Update Product" : "Add Product"{"}"}
+      <button type="submit" className="btn btn-primary">
+        {currentProduct ? "Update Product" : "Add Product"}
       </button>
-      <button type="button" classname="btn btn-secondary" onclick="{clearForm}">
+      <button type="button" className="btn btn-secondary" onClick={clearForm}>
         Clear
       </button>
     </form>
